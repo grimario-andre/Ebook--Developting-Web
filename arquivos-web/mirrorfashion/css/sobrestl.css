@@ -63,6 +63,7 @@ figcaption{
 
 /*rodapé*/
 div#rodape{
+    text-align: center;
     color: #777777;
     margin: 30px 0px;
     padding: 30px 0px;

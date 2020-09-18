@@ -1,0 +1,53 @@
+@charset 'UTF-8';
+/*corpo da página*/
+body{
+    color: #003366;
+    font-family: "Lucinda Sans Unicode", "Lucinda Grande", sans-serif;
+}
+
+/* logo sacola */
+p.sacola{
+    background-image: url('../img/sacola.png');
+    background-repeat: no-repeat;
+    background-position: top right;
+    font-size: 14pt;
+    padding-right: 35px;
+    text-align: right;
+    width: 140px;
+    padding-top: 8px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+/*cabeçalho*/
+header{position: relative;
+}
+
+/*menu de opções*/
+nav.menu-opcoes {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+nav.menu-opcoes ul{
+    font-size: 15pt;
+}
+
+nav.menu-opcoes ul li{
+    display: inline;
+    margin-left: 20px;
+}
+
+nav.menu-opcoes a{
+    color: #003366;
+}
+
+/*container*/
+.container{
+    margin: 0 auto;
+    width: 940px;
+}
+
+
