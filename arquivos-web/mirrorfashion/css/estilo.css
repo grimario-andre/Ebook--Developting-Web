@@ -50,4 +50,82 @@ nav.menu-opcoes a{
     width: 940px;
 }
 
+/* menu e destaques */
+section.busca, section.menu-departamento{
+    float: left;
+    background-color: #dcdcdc;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 10px;
+    /*width: 230px;*/
+}
 
+section.menu-departamento{
+    clear: left;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+section.busca h2, .busca form, section.menu-departamento h2{
+    margin: 10px;
+}
+
+section.menu-departamento li{
+    background-color: white;
+    margin-bottom: 1px;
+    padding: 5px 10px;
+}
+
+section.busca form input[type=search]{
+    width: 140px;
+}
+
+.destaque{
+    margin-top: 10px;
+}
+
+/* Paineis */
+
+.painel {
+    margin: 10px 0;
+    padding: 10px;
+    width: 445px;
+}
+
+.painel li{
+    display: inline-block;
+    vertical-align: top;
+    width: 140px;
+    margin: 2px;
+    padding-bottom: 10px;
+}
+
+.painel h2{
+    font-size: 24pt;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.painel a{
+    color: #333333;
+    font-size: 14pt;
+    text-align: center;
+    text-decoration: none;
+}
+
+.novidades{
+    background-color: #ff55dd;
+}
+
+.mais-vendidos{
+    background-color: #dcdf5d;
+}
+
+.novidades{
+    float: left;
+}
+
+.mais-vendidos{
+    float: right;
+}
