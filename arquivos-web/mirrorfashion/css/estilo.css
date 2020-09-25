@@ -80,8 +80,39 @@ section.busca form input[type=search]{
     width: 140px;
 }
 
+/* idicionar imagem botao */
+.busca button{
+    /*add image */
+    background-image: url('../img/busca.png');
+    background-repeat: no-repeat;
+    border: none;
+
+    /* image size */
+    width: 20px;
+    height: 20px;
+
+    /* imagem replacement */
+    text-indent: -9999px;
+}
+
 .destaque{
     margin-top: 10px;
+}
+
+/* Banner */
+.banner-destaque{
+    float: left;
+    margin-top: -50px;
+    margin-left: 10px;
+}
+
+.banner-destaque figure{
+    margin: auto;
+}
+
+.banner-destaque img{
+    width: 100%;
+    height: 100%;
 }
 
 /* Paineis */
@@ -95,8 +126,9 @@ section.busca form input[type=search]{
 .painel li{
     display: inline-block;
     vertical-align: top;
-    width: 140px;
+    width: 135px;
     margin: 2px;
+    padding: 2px;
     padding-bottom: 10px;
 }
 
@@ -114,18 +146,83 @@ section.busca form input[type=search]{
     text-decoration: none;
 }
 
+/* novidades */
 .novidades{
     background-color: #ff55dd;
+}
+
+
+.novidades{
+    float: left;
+}
+
+.novidades figure{
+    margin: auto;
+}
+
+.novidades img{
+    width: 100%;
+    height: 100%;
+}
+
+/* mais vendidos */
+.mais-vendidos{
+    float: right;
 }
 
 .mais-vendidos{
     background-color: #dcdf5d;
 }
 
-.novidades{
-    float: left;
+.mais-vendidos figure{
+    margin: auto;
 }
 
-.mais-vendidos{
-    float: right;
+.mais-vendidos img{
+    width: 100%;
+    height: 100%;
+}
+
+/* rodapé */
+
+footer{
+    background-image: url('../img/fundo-rodape.png');
+    padding: 20px 0px;
+    clear: both;
+}
+
+div.container{
+    position: relative;
+}
+
+/* formatando link */
+.social{
+    position: absolute;
+    top: 12px;
+    right: 0px;
+}
+
+.social a{
+    /* tamanho iamgem */
+    height: 32px;
+    width: 32px;
+    display: block;
+    text-indent: -9999px;
+}
+
+.social a[href*="facebook.com"]{
+    background-image: url('../img/facebook.png');
+}
+
+.social a[href*='twitter.com']{
+    background-image: url('../img/twitter.png');
+}
+
+.social a[href*='plus.google.com']{
+    background-image: url('../img/googleplus.png');
+}
+
+.social li{
+    float: left;
+    margin: 25px;
 }
