@@ -5,7 +5,7 @@ body{
     color: #333333;
     font-family: "lucida Sans Unicode", "Lucida Grande", sans-serif;
     margin: 0px auto;
-    width: 940px;
+    width: auto;
 }
 
 /* cabeçalho */
@@ -55,7 +55,24 @@ h3{
 }
 
 p{
-    padding: 0px 45px;
+    padding: 0px 15px;
+}
+
+/* artigos e sessões */
+article{
+    width: auto;
+    height: auto;
+    max-width: auto;
+}
+
+section{
+    width: auto;
+    height: auto;
+    margin: auto;
+}
+
+section p{
+    width: 600px;
 }
 
 /*imagens*/
@@ -93,15 +110,47 @@ figcaption{
 }
 
 /*rodapé*/
-div#rodape{
-    text-align: center;
-    color: #777777;
-    margin: 30px 0px;
-    padding: 30px 0px;
+
+footer{
+    background-image: url('../img/fundo-rodape.png');
+    padding: 20px 0px;
+    clear: both;
+    width: auto;
+    height: auto;
 }
 
-div#rodape img{
-    margin: 0px 30px 0px 0px;
-    vertical-align: middle;
-    width: 90px;
+div.container{
+    position: relative;
+}
+
+/*formatando o link */
+.social{
+    position: absolute;
+    top: -38px;
+    right: 0px;
+}
+
+.social a{
+    /*tamanho da imagem */
+    height: 32px;
+    width: 32px;
+    display: block;
+    text-indent: -9999px;
+}
+
+.social a[href*="facebook.com"]{
+    background-image: url('../img/facebook.png');
+}
+
+.social a[href*="twitter.com"]{
+    background-image: url('../img/twitter.png');
+}
+
+.social a[href*="plus.google.com"]{
+    background-image: url('../img/googleplus.png');
+}
+
+.social li{
+    float: left;
+    margin: 25px;
 }
