@@ -44,6 +44,14 @@ nav.menu-opcoes a{
     color: #003366;
 }
 
+.menu-opcoes a:hover{
+    color: #007DC6;
+}
+
+.menu-opcoes a:active{
+    color:#867DC6;
+}
+
 /*container*/
 .container{
     margin: 0 auto;
@@ -64,6 +72,23 @@ section.menu-departamento{
     clear: left;
     margin-top: 10px;
     padding: 10px;
+}
+
+.menu-departamento li ul{
+    display: none;
+}
+
+.menu-departamento li:hover ul{
+    display: block;
+}
+
+.menu-departamento ul ul li{
+    background-color: #dcdcdc;
+}
+
+.menu-departamento li li a::before{
+    content: '\272A';
+    padding-right: 3px;
 }
 
 section.busca h2, .busca form, section.menu-departamento h2{
@@ -137,6 +162,12 @@ section.busca form input[type=search]{
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 10px;
+}
+
+.painel h2::before{
+    content: '\2756';
+    padding-right: 5px;
+    opacity: 0.4; 
 }
 
 .painel a{

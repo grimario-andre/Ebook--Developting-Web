@@ -39,9 +39,14 @@ nav.menu-opcoes a{
     width: 940px;
 }
 
+/* Pseudo Elementos */
 h1{
     background-image: url('../img/sobre-background.jpg');
     padding: 10px;
+}
+
+h1 + p{
+    text-indent: 0;
 }
 
 h2{
@@ -56,6 +61,14 @@ h3{
 
 p{
     padding: 0px 15px;
+}
+
+p::first-letter{
+    font-weight: bold;
+}
+
+:not(p) + p::first-line{
+    font-variant: small-caps;
 }
 
 /* artigos e sessões */
@@ -110,7 +123,6 @@ figcaption{
 }
 
 /*rodapé*/
-
 footer{
     background-image: url('../img/fundo-rodape.png');
     padding: 20px 0px;
