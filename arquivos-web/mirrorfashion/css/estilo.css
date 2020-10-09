@@ -55,7 +55,7 @@ nav.menu-opcoes a{
 /*container*/
 .container{
     margin: 0 auto;
-    width: 940px;
+    width: 950px;
 }
 
 /* menu e destaques */
@@ -106,6 +106,11 @@ section.busca form input[type=search]{
 }
 
 /* idicionar imagem botao */
+.busca{
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
 .busca button{
     /*add image */
     background-image: url('../img/busca.png');
@@ -146,6 +151,8 @@ section.busca form input[type=search]{
     margin: 10px 0;
     padding: 10px;
     width: 445px;
+    border-radius: 4px;
+    box-shadow: inset 1px 1px 4px #999999;
 }
 
 .painel li{
@@ -162,6 +169,7 @@ section.busca form input[type=search]{
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 10px;
+    text-shadow: 3px 3px 2px rgba(255, 255, 255, 0.8);
 }
 
 .painel h2::before{
@@ -180,11 +188,8 @@ section.busca form input[type=search]{
 /* novidades */
 .novidades{
     background-color: #ff55dd;
-}
-
-
-.novidades{
     float: left;
+    background: linear-gradient(#f5dcdc, #BEBEF4);
 }
 
 .novidades figure{
@@ -199,10 +204,8 @@ section.busca form input[type=search]{
 /* mais vendidos */
 .mais-vendidos{
     float: right;
-}
-
-.mais-vendidos{
     background-color: #dcdf5d;
+    background: linear-gradient(#DCDCF5, #F4BEBE);
 }
 
 .mais-vendidos figure{
