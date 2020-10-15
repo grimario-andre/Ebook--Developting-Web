@@ -1,0 +1,72 @@
+@charset "utf-8";
+
+/* Learning about selectors precedence order  */
+
+
+/* model deafault */
+
+p {
+    /*
+    color: navy; */
+}
+
+p {
+    /*
+    font-size: 16px; */
+}
+
+
+/* when there is conflit between seletors */
+
+p {
+    color: navy;
+    font-size: 12px;
+}
+
+p {
+    font-size: 16px;
+    /* Nesta caso prevalece o selector subsequente */
+}
+
+
+/* Cada	 tipo	 de	 seletor	 tem	 um	 peso	 diferente	 quando	 o	 navegador	 os	 interpreta	 e	 aplica	 suas
+propriedades	 declaradas	 aos	 elementos	 de	 um	 documento.	 Existe	 uma	maneira	 bem	 simples	 de	 saber
+como	funcionam	esses	pesos	porque	eles	fazem	parte	da	especificação	do	CSS.	Para	ficar	um	pouco	mais
+fácil	é	só	pensarmos	em	uma	regra	simples:	quanto	mais	específico	for	o	seletor,	maior	seu	valor.	Por
+isso	esse	peso,	ou	valor,	que	cada	seletor	tem,	recebe	o	nome	de	especificidade. */
+
+
+/* table values */
+
+p {
+    /*	valor	de	especificidade:	001	*/
+    color: blue;
+}
+
+.destaque {
+    /*	valor	de	especificidade:	010	*/
+    color: red;
+}
+
+#cabecalho {
+    /*	valor	de	especificidade:	100	*/
+    color: green;
+}
+
+
+/* soma dos valores da tabela */
+
+#rodape p {
+    /*	valor	de	especificidade:	101	*/
+    font-size: 11px;
+}
+
+#cabecalho .conteudo h1 {
+    /*	valor	de	especificidade	111	*/
+    color: green;
+}
+
+.conteudo div p span {
+    /*	valor	de	especificidade:	013	*/
+    font-size: 13px;
+}

@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+/* Transfomrs */
+#test{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+}
+
+.header{
+    /* move element in the horizontal 
+    transform: translateX(50px); */
+}
+
+#test {
+    /* move element in the vertical 
+    transform: translateY(-20px); */
+}
+
+.footer{
+    /* move elemente in the two axys: X and Y 
+    transform: translate(100px, -100px);*/
+}
+
+/* Rotate */
+
+#test{
+    /* param rotare increase a rotation in the element 
+    transform: rotate(-20deg);*/
+}
+
+.header{
+    /* aplic a scale resolution in the element 
+    transform: scale(1.2); */
+}
+.header{
+    /* modify axys of the element 
+    transform: scale(1, 0.6); */
+}
+
+/* Skew */
+.header{
+    /* move element in the diagonal 
+    transform: skewX(10deg);
+    transform: skewY(15deg);
+    transform: Skew(10deg, 15deg);  */
+}
+
+/* there is many transforms combinations */
+html{
+    transform: rotate(-30deg) scale(1.2);
+}
