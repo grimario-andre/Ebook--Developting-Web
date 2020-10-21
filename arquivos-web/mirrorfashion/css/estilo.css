@@ -1,12 +1,20 @@
 @charset 'UTF-8';
+
 /*corpo da página*/
-body{
+
+body {
     color: #003366;
     font-family: "Lucinda Sans Unicode", "Lucinda Grande", sans-serif;
 }
 
+
 /* logo sacola */
-p.sacola{
+
+.sacola {
+    display: none;
+}
+
+p.sacola {
     background-image: url('../img/sacola.png');
     background-repeat: no-repeat;
     background-position: top right;
@@ -20,163 +28,203 @@ p.sacola{
     right: 0px;
 }
 
+
 /*cabeçalho*/
-header{position: relative;
+
+header {
+    position: relative;
 }
 
+header h1 {
+    text-align: center;
+}
+
+header h1 img {
+    max-width: 50%;
+}
+
+
 /*menu de opções*/
+
 nav.menu-opcoes {
-    position: absolute;
+    /*position: absolute;*/
     bottom: 0px;
     right: 0px;
 }
 
-nav.menu-opcoes ul{
+nav.menu-opcoes ul {
     font-size: 15pt;
 }
 
-nav.menu-opcoes ul li{
-    display: inline;
+nav.menu-opcoes ul li {
+    display: inline-block;
     margin-left: 20px;
+    margin: 5px;
 }
 
-nav.menu-opcoes a{
+nav.menu-opcoes a {
     color: #003366;
 }
 
-.menu-opcoes a:hover{
+.menu-opcoes a:hover {
     color: #007DC6;
 }
 
-.menu-opcoes a:active{
-    color:#867DC6;
+.menu-opcoes a:active {
+    color: #867DC6;
 }
+
+.menu-opcoes {
+    position: static;
+    text-align: center;
+}
+
 
 /*container*/
-.container{
+
+.container {
     margin: 0 auto;
-    width: 950px;
+    width: 940px;
 }
 
+
 /* menu e destaques */
-section.busca, section.menu-departamento{
-    float: left;
+
+section.busca,
+section.menu-departamento {
+    /*float: left;*/
     background-color: #dcdcdc;
     font-weight: bold;
     text-transform: uppercase;
-    margin-right: 10px;
-    /*width: 230px;*/
+    /*margin-right: 10px;*/
+    width: auto;
 }
 
-section.menu-departamento{
-    clear: left;
+section.menu-departamento {
+    /*clear: left;*/
     margin-top: 10px;
     padding: 10px;
 }
 
-.menu-departamento li ul{
+.menu-departamento li ul {
     display: none;
 }
 
-.menu-departamento li:hover ul{
+.menu-departamento li:hover ul {
     display: block;
 }
 
-.menu-departamento ul ul li{
+.menu-departamento ul ul li {
     background-color: #dcdcdc;
 }
 
-.menu-departamento li li a::before{
+.menu-departamento li li a::before {
     content: '\272A';
     padding-right: 3px;
 }
 
-section.busca h2, .busca form, section.menu-departamento h2{
-    margin: 10px;
+section.busca h2,
+.busca form,
+section.menu-departamento h2 {
+    margin: 5px;
+    padding: 5px;
+    padding-left: 10px;
 }
 
-section.menu-departamento li{
+section.menu-departamento li {
     background-color: white;
     margin-bottom: 1px;
     padding: 5px 10px;
 }
 
-section.busca form input[type=search]{
+section.busca form input[type=search] {
     width: 140px;
 }
 
+
 /* idicionar imagem botao */
-.busca{
+
+.busca {
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
 }
 
-.busca button{
+.busca button {
     /*add image */
     background-image: url('../img/busca.png');
     background-repeat: no-repeat;
     border: none;
-
     /* image size */
     width: 20px;
     height: 20px;
-
     /* imagem replacement */
     text-indent: -9999px;
 }
 
-.destaque{
+.destaque {
     margin-top: 10px;
 }
 
-/* Banner */
-.banner-destaque{
-    float: left;
-    margin-top: -50px;
-    margin-left: 10px;
+
+/* rescaling */
+
+.busca,
+.menu-departamentos,
+.banner-destaque img {
+    margin-right: 0;
+    width: 100%;
 }
 
-.banner-destaque figure{
+
+/* Banner */
+
+.banner-destaque {
+    /* float: left; */
+    margin: 5px;
+}
+
+.banner-destaque figure {
     margin: auto;
 }
 
-.banner-destaque img{
+.banner-destaque img {
     width: 100%;
     height: 100%;
 }
+
 
 /* Paineis */
 
 .painel {
     margin: 10px 0;
     padding: 10px;
-    width: 445px;
+    width: auto;
     border-radius: 4px;
     box-shadow: inset 1px 1px 4px #999999;
 }
 
-.painel li{
+.painel li {
     display: inline-block;
     vertical-align: top;
-    width: 135px;
-    margin: 2px;
+    width: 30%;
+    margin: 10px;
     padding: 2px;
     padding-bottom: 10px;
     transition: 0.7s;
 }
 
-.painel li:hover{
+.painel li:hover {
     background-color: rgba(255, 255, 255, 0.8);
     box-shadow: 0 0 5px #333333;
     transition: 0.7s;
     transform: scale(1.2) rotate(-5deg);
 }
 
-.painel li:nth-child(2n):hover	{
-    transform:	scale(1.2)	rotate(5deg);
+.painel li:nth-child(2n):hover {
+    transform: scale(1.2) rotate(5deg);
 }
 
-.painel h2{
+.painel h2 {
     font-size: 24pt;
     font-weight: bold;
     text-transform: uppercase;
@@ -184,71 +232,82 @@ section.busca form input[type=search]{
     text-shadow: 3px 3px 2px rgba(255, 255, 255, 0.8);
 }
 
-.painel h2::before{
+.painel h2::before {
     content: '\2756';
     padding-right: 5px;
-    opacity: 0.4; 
+    opacity: 0.4;
 }
 
-.painel a{
+.painel a {
     color: #333333;
     font-size: 14pt;
     text-align: center;
     text-decoration: none;
 }
 
+.painel img {
+    width: 100%;
+}
+
+
 /* novidades */
-.novidades{
+
+.novidades {
     background-color: #ff55dd;
     float: left;
     background: linear-gradient(#f5dcdc, #BEBEF4);
 }
 
-.novidades figure{
+.novidades figure {
     margin: auto;
 }
 
-.novidades img{
+.novidades img {
     width: 100%;
     height: 100%;
 }
 
+
 /* mais vendidos */
-.mais-vendidos{
+
+.mais-vendidos {
     float: right;
     background-color: #dcdf5d;
     background: linear-gradient(#DCDCF5, #F4BEBE);
 }
 
-.mais-vendidos figure{
+.mais-vendidos figure {
     margin: auto;
 }
 
-.mais-vendidos img{
+.mais-vendidos img {
     width: 100%;
     height: 100%;
 }
 
+
 /* rodapé */
 
-footer{
+footer {
     background-image: url('../img/fundo-rodape.png');
     padding: 20px 0px;
     clear: both;
 }
 
-div.container{
+div.container {
     position: relative;
 }
 
+
 /* formatando link */
-.social{
+
+.social {
     position: absolute;
     top: -6px;
     right: 0px;
 }
 
-.social a{
+.social a {
     /* tamanho iamgem */
     height: 32px;
     width: 32px;
@@ -256,19 +315,28 @@ div.container{
     text-indent: -9999px;
 }
 
-.social a[href*="facebook.com"]{
+.social a[href*="facebook.com"] {
     background-image: url('../img/facebook.png');
 }
 
-.social a[href*='twitter.com']{
+.social a[href*='twitter.com'] {
     background-image: url('../img/twitter.png');
 }
 
-.social a[href*='plus.google.com']{
+.social a[href*='plus.google.com'] {
     background-image: url('../img/googleplus.png');
 }
 
-.social li{
+.social li {
     float: left;
     margin: 25px;
+}
+
+
+/* midia queires */
+
+@media (max-width:940px) {
+    .container {
+        width: 100%;
+    }
 }
